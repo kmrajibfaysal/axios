@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Connecteffffd! All working</h1>
-    <button>Load Joke</button>
-    <div>
-      <ul id="joke_container"></ul>
+    <h1>TV show search API Testing.</h1>
+    <form>
+      <input id="search_box" type="text" name="query" />
+      <button type="submit">Search</button>
+    </form>
+    <div id="spinner" class="">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <h2>Search Results!</h2>
+    <div id="searchResultImage"></div>
     <!-- Javascript link up -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
